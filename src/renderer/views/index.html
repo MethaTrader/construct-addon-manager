@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
   <!-- Titlebar / Window Controls -->
@@ -81,6 +81,49 @@
     </div>
   </div>
 
-  <script src="renderer.js"></script>
+  <!-- Add this new div after the path-selection-screen div in index.html -->
+<div id="loading-screen" class="screen">
+  <div class="loading-container">
+    <h1>Loading Resources</h1>
+    <p>Please wait while we validate your Construct 2 installation</p>
+    
+    <div class="loader">
+      <div class="loader-bar"></div>
+    </div>
+    
+    <div class="validation-status">
+      <div class="status-item" id="behaviors-check">
+        <span class="status-icon">⬜</span>
+        <span class="status-text">Checking behaviors folder...</span>
+      </div>
+      <div class="status-item" id="plugins-check">
+        <span class="status-icon">⬜</span>
+        <span class="status-text">Checking plugins folder...</span>
+      </div>
+      <div class="status-item" id="effects-check">
+        <span class="status-icon">⬜</span>
+        <span class="status-text">Checking effects folder...</span>
+      </div>
+      <div class="status-item" id="executable-check">
+        <span class="status-icon">⬜</span>
+        <span class="status-text">Checking Construct2.exe...</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Add this error modal to be shown when validation fails -->
+<div id="validation-error" class="modal">
+  <div class="modal-content">
+    <div class="warning-icon">❌</div>
+    <h2>Invalid Construct 2 Path</h2>
+    <p id="validation-error-message">The selected folder does not appear to be a valid Construct 2 installation.</p>
+    <div class="modal-actions">
+      <button id="try-again-btn" class="btn primary-btn">Try Again</button>
+    </div>
+  </div>
+</div>
+
+  <script src="../scripts/renderer.js"></script>
 </body>
 </html>

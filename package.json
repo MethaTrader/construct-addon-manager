@@ -2,7 +2,7 @@
     "name": "construct-addon-manager",
     "version": "1.0.0",
     "description": "Addon Manager for Construct 2 and 3",
-    "main": "main.js",
+    "main": "src/main/main.js",
     "scripts": {
       "start": "electron ."
     },

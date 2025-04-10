@@ -5,6 +5,7 @@ const { contextBridge, ipcRenderer } = require('electron');
 contextBridge.exposeInMainWorld(
   'api', {
     selectFolder: () => ipcRenderer.invoke('select-folder'),
+    validateConstructPath: (path) => ipcRenderer.invoke('validate-construct-path', path),
     onNotAdmin: (callback) => {
       const subscription = (_event) => callback();
       ipcRenderer.on('not-admin', subscription);
@@ -16,6 +17,8 @@ contextBridge.exposeInMainWorld(
     restartAsAdmin: () => ipcRenderer.send('restart-as-admin'),
     minimizeWindow: () => ipcRenderer.send('minimize-window'),
     maximizeWindow: () => ipcRenderer.send('maximize-window'),
-    closeWindow: () => ipcRenderer.send('close-window')
+    closeWindow: () => ipcRenderer.send('close-window'),
+    navigateToItems: () => ipcRenderer.send('navigate-to-items'),
+    navigateToHome: () => ipcRenderer.send('navigate-to-home')
   }
 );

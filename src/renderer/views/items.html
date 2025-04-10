@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Construct Addon Manager - Items</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="../styles/items.css">
+</head>
+<body>
+  <!-- Titlebar / Window Controls -->
+  <div class="titlebar">
+    <div class="titlebar-text">Construct Addon Manager</div>
+    <div class="window-controls">
+      <div class="window-control" id="minimize-btn">―</div>
+      <div class="window-control" id="maximize-btn">□</div>
+      <div class="window-control" id="close-btn">✕</div>
+    </div>
+  </div>
+
+  <!-- Main Container -->
+  <div class="main-container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <h3>Categories</h3>
+      </div>
+      <div class="sidebar-content">
+        <ul class="sidebar-menu">
+          <li class="sidebar-item active" data-filter="all">
+            <div class="sidebar-icon">🧩</div>
+            <div class="sidebar-text">All Items</div>
+          </li>
+          <li class="sidebar-item" data-filter="plugin">
+            <div class="sidebar-icon">🔌</div>
+            <div class="sidebar-text">Plugins</div>
+          </li>
+          <li class="sidebar-item" data-filter="behavior">
+            <div class="sidebar-icon">🔄</div>
+            <div class="sidebar-text">Behaviors</div>
+          </li>
+          <li class="sidebar-item" data-filter="effect">
+            <div class="sidebar-icon">✨</div>
+            <div class="sidebar-text">Effects</div>
+          </li>
+        </ul>
+      </div>
+      <div class="sidebar-footer">
+        <button id="settings-btn" class="sidebar-button">
+          <div class="sidebar-icon">⚙️</div>
+          <div class="sidebar-text">Settings</div>
+        </button>
+      </div>
+    </div>
+
+    <!-- Content Area -->
+    <div class="content-area">
+      <!-- Search and Filter Bar -->
+      <div class="search-bar">
+        <div class="search-container">
+          <div class="search-icon">🔍</div>
+          <input type="text" id="search-input" placeholder="Search items...">
+          <button id="clear-search" class="clear-search">✕</button>
+        </div>
+        <div class="filter-container">
+          <select id="sort-select" class="filter-select">
+            <option value="name-asc">Name (A-Z)</option>
+            <option value="name-desc">Name (Z-A)</option>
+            <option value="type">Type</option>
+            <option value="date-added">Date Added</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Items Grid -->
+      <div class="items-grid">
+        <!-- Items will be dynamically generated here -->
+      </div>
+
+      <!-- No Results Message -->
+      <div id="no-results" class="no-results hidden">
+        <div class="no-results-icon">😕</div>
+        <h3>No items found</h3>
+        <p>Try adjusting your search or filter criteria</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Item Details Modal -->
+  <div id="item-details-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modal-item-name">Item Name</h2>
+        <div class="modal-close" id="close-modal">✕</div>
+      </div>
+      <div class="modal-body">
+        <div class="modal-item-icon" id="modal-item-icon">🔌</div>
+        <div class="modal-item-details">
+          <div class="detail-row">
+            <div class="detail-label">Type:</div>
+            <div class="detail-value" id="modal-item-type">Plugin</div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-label">Version:</div>
+            <div class="detail-value" id="modal-item-version">1.0.0</div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-label">Author:</div>
+            <div class="detail-value" id="modal-item-author">Author Name</div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-label">Description:</div>
+            <div class="detail-value" id="modal-item-description">Description text will go here...</div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn secondary-btn" id="disable-item-btn">Disable</button>
+        <button class="btn primary-btn" id="manage-item-btn">Manage</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="../scripts/items.js"></script>
+</body>
+</html>
