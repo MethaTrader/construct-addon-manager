@@ -73,6 +73,11 @@ ipcMain.on('navigate-to-home', () => {
   mainWindow.loadFile(path.join(__dirname, '../renderer/views/index.html'));
 });
 
+// Listen for open external link event
+ipcMain.on('open-external-link', (event, url) => {
+  require('electron').shell.openExternal(url);
+});
+
 // Validate Construct 2 path
 ipcMain.handle('validate-construct-path', async (event, folderPath) => {
   try {

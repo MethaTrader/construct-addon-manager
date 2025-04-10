@@ -7,6 +7,13 @@ const noResults = document.getElementById('no-results');
 const sidebarItems = document.querySelectorAll('.sidebar-item');
 const itemDetailsModal = document.getElementById('item-details-modal');
 const closeModalBtn = document.getElementById('close-modal');
+const settingsModal = document.getElementById('settings-modal');
+const closeSettingsModalBtn = document.getElementById('close-settings-modal');
+const settingsBtn = document.getElementById('settings-btn');
+const backToHomeBtn = document.getElementById('back-to-home-btn');
+const downloadResourcesToggle = document.getElementById('download-resources-toggle');
+const autoUpdateToggle = document.getElementById('auto-update-toggle');
+const donateBtn = document.getElementById('donate-btn');
 
 // Window control buttons
 document.getElementById('minimize-btn').addEventListener('click', () => {
@@ -21,15 +28,46 @@ document.getElementById('close-btn').addEventListener('click', () => {
   window.api.closeWindow();
 });
 
-// Settings button to go back to home screen
-document.getElementById('settings-btn').addEventListener('click', () => {
-  // In a real app, this would show settings
-  // For now, we'll use it to go back to the path selection screen
+// Settings button to open settings modal
+settingsBtn.addEventListener('click', () => {
+  // Show settings modal instead of navigating
+  settingsModal.classList.add('active');
+});
+
+// Close settings modal
+closeSettingsModalBtn.addEventListener('click', () => {
+  settingsModal.classList.remove('active');
+});
+
+// Back to home button
+backToHomeBtn.addEventListener('click', () => {
+  // Navigate to home
   if (window.api && window.api.navigateToHome) {
     window.api.navigateToHome();
   } else {
     alert('Navigation not available in this demo');
   }
+});
+
+// Donate button
+donateBtn.addEventListener('click', () => {
+  // Open donation link in default browser
+  if (window.api && window.api.openExternalLink) {
+    window.api.openExternalLink('https://beemaxstudio.itch.io/construct-addon-manager');
+  } else {
+    alert('Donation link: https://beemaxstudio.itch.io/construct-addon-manager');
+  }
+});
+
+// Settings toggles
+downloadResourcesToggle.addEventListener('change', () => {
+  // In a real app, this would save the setting
+  console.log('Download resources locally:', downloadResourcesToggle.checked);
+});
+
+autoUpdateToggle.addEventListener('change', () => {
+  // In a real app, this would save the setting
+  console.log('Auto-update:', autoUpdateToggle.checked);
 });
 
 // Sample items data - In a real app, this would come from the main process

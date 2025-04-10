@@ -19,6 +19,7 @@ contextBridge.exposeInMainWorld(
     maximizeWindow: () => ipcRenderer.send('maximize-window'),
     closeWindow: () => ipcRenderer.send('close-window'),
     navigateToItems: () => ipcRenderer.send('navigate-to-items'),
-    navigateToHome: () => ipcRenderer.send('navigate-to-home')
+    navigateToHome: () => ipcRenderer.send('navigate-to-home'),
+    openExternalLink: (url) => ipcRenderer.send('open-external-link', url)
   }
 );

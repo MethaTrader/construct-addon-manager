@@ -124,6 +124,46 @@
     </div>
   </div>
 
+  <!-- Settings Modal -->
+  <div id="settings-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Settings</h2>
+        <div class="modal-close" id="close-settings-modal">✕</div>
+      </div>
+      <div class="modal-body settings-body">
+        <div class="settings-section">
+          <div class="setting-item">
+            <div class="setting-label">Download Resources Locally</div>
+            <label class="switch">
+              <input type="checkbox" id="download-resources-toggle">
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="setting-item">
+            <div class="setting-label">Auto-Update</div>
+            <label class="switch">
+              <input type="checkbox" id="auto-update-toggle">
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+        
+        <div class="about-section">
+          <h3>About</h3>
+          <p>Construct Addon Manager v2.0.0</p>
+          <p>Created by MethaTrader</p>
+          <p>Thank you for using this application!</p>
+          <button class="btn primary-btn" id="donate-btn">Support Development</button>
+        </div>
+        
+        <div class="buttons-section">
+          <button class="btn secondary-btn" id="back-to-home-btn">Exit to Main Menu</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="../scripts/items.js"></script>
 </body>
 </html>
