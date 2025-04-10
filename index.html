@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Construct Addon Manager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Titlebar / Window Controls -->
+  <div class="titlebar">
+    <div class="titlebar-text">Construct Addon Manager</div>
+    <div class="window-controls">
+      <div class="window-control" id="minimize-btn">―</div>
+      <div class="window-control" id="maximize-btn">□</div>
+      <div class="window-control" id="close-btn">✕</div>
+    </div>
+  </div>
+
+  <!-- Admin Warning Modal -->
+  <div id="admin-warning" class="modal">
+    <div class="modal-content">
+      <div class="warning-icon">⚠️</div>
+      <h2>Administrator Privileges Required</h2>
+      <p>This application requires administrator privileges for full functionality.</p>
+      <div class="modal-actions">
+        <button id="restart-admin-btn" class="btn primary-btn">Restart as Administrator</button>
+        <button id="continue-btn" class="btn secondary-btn">Continue Anyway</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Welcome Screen -->
+  <div id="welcome-screen" class="screen active">
+    <div class="welcome-container">
+      <h1>Welcome to Construct Addon Manager</h1>
+      <p>Select your engine to continue</p>
+      
+      <div class="engine-selection">
+        <button id="construct2-btn" class="engine-btn">
+          <div class="engine-btn-content">
+            <span class="engine-name">Construct 2</span>
+          </div>
+        </button>
+        
+        <button id="construct3-btn" class="engine-btn">
+          <div class="engine-btn-content">
+            <span class="engine-name">Construct 3</span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Path Selection Screen -->
+  <div id="path-selection-screen" class="screen">
+    <div class="path-selection-container">
+      <h1>Select Construct 2 Installation Path</h1>
+      <p>Please specify the folder where Construct 2 is installed</p>
+      
+      <div class="path-selector">
+        <input type="text" id="path-input" class="text-input" placeholder="Installation path..." readonly>
+        <button id="browse-btn" class="btn primary-btn">Browse</button>
+      </div>
+      
+      <div class="liability-section">
+        <label class="checkbox-container">
+          <input type="checkbox" id="liability-checkbox">
+          <span class="checkmark"></span>
+          <span class="checkbox-text">I accept the liability policy and understand the risks of installing third-party addons</span>
+        </label>
+      </div>
+      
+      <div class="action-buttons">
+        <button id="back-btn" class="btn secondary-btn">Back</button>
+        <button id="continue-path-btn" class="btn primary-btn" disabled>Continue</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

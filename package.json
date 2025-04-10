@@ -1,0 +1,15 @@
+{
+    "name": "construct-addon-manager",
+    "version": "1.0.0",
+    "description": "Addon Manager for Construct 2 and 3",
+    "main": "main.js",
+    "scripts": {
+      "start": "electron ."
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "electron": "^29.1.0",
+      "is-admin": "^3.0.0"
+    }
+  }
