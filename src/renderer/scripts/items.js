@@ -15,6 +15,30 @@ const downloadResourcesToggle = document.getElementById('download-resources-togg
 const autoUpdateToggle = document.getElementById('auto-update-toggle');
 const donateBtn = document.getElementById('donate-btn');
 
+// Add Resource Modal elements
+const addResourceModal = document.getElementById('add-resource-modal');
+const addResourceBtn = document.getElementById('add-resource-btn-open');
+const closeAddResourceModalBtn = document.getElementById('close-add-resource-modal');
+const cancelAddResourceBtn = document.getElementById('cancel-add-resource-btn');
+const resourceTypeOptions = document.querySelectorAll('.resource-type-option');
+const resourcePathInput = document.getElementById('resource-path-input');
+const browseResourceBtn = document.getElementById('browse-resource-btn');
+const confirmAddResourceBtn = document.getElementById('add-resource-btn');
+const resourceErrorContainer = document.getElementById('resource-error');
+const errorMessageElement = document.getElementById('error-message');
+const resourcePreview = document.getElementById('resource-preview');
+
+// Success and Conflict modals
+const resourceAddedModal = document.getElementById('resource-added-modal');
+const resourceConflictModal = document.getElementById('resource-conflict-modal');
+const closeSuccessModalBtn = document.getElementById('close-success-modal');
+const okSuccessBtn = document.getElementById('ok-success-btn');
+const closeConflictModalBtn = document.getElementById('close-conflict-modal');
+const cancelOverwriteBtn = document.getElementById('cancel-overwrite-btn');
+const confirmOverwriteBtn = document.getElementById('confirm-overwrite-btn');
+const successResourceName = document.getElementById('success-resource-name');
+const conflictResourceName = document.getElementById('conflict-resource-name');
+
 // Window control buttons
 document.getElementById('minimize-btn').addEventListener('click', () => {
   window.api.minimizeWindow();
@@ -351,15 +375,235 @@ document.getElementById('manage-item-btn').addEventListener('click', () => {
   closeItemDetails();
 });
 
+// Add Resource Modal Functionality
+// Open Add Resource Modal
+addResourceBtn.addEventListener('click', () => {
+  // Reset form state
+  resetAddResourceForm();
+  // Show the modal
+  addResourceModal.classList.add('active');
+});
+
+// Close Add Resource Modal
+function closeAddResourceModal() {
+  addResourceModal.classList.remove('active');
+}
+
+closeAddResourceModalBtn.addEventListener('click', closeAddResourceModal);
+cancelAddResourceBtn.addEventListener('click', closeAddResourceModal);
+
+// Close modals when clicking outside
+addResourceModal.addEventListener('click', (e) => {
+  if (e.target === addResourceModal) {
+    closeAddResourceModal();
+  }
+});
+
+resourceAddedModal.addEventListener('click', (e) => {
+  if (e.target === resourceAddedModal) {
+    resourceAddedModal.classList.remove('active');
+  }
+});
+
+resourceConflictModal.addEventListener('click', (e) => {
+  if (e.target === resourceConflictModal) {
+    resourceConflictModal.classList.remove('active');
+  }
+});
+
+// Resource type selection
+resourceTypeOptions.forEach(option => {
+  option.addEventListener('click', () => {
+    // Remove active class from all options
+    resourceTypeOptions.forEach(opt => opt.classList.remove('active'));
+    // Add active class to selected option
+    option.classList.add('active');
+    // Update validation
+    validateResourceForm();
+  });
+});
+
+// Browse resource button
+browseResourceBtn.addEventListener('click', async () => {
+  // In a real app, this would use the main process to open a file dialog
+  try {
+    // Try to use the Electron API if available
+    if (window.api && window.api.selectFolder) {
+      const paths = await window.api.selectFolder();
+      if (paths && paths.length > 0) {
+        resourcePathInput.value = paths[0];
+        
+        // Show preview with data
+        showResourcePreview({
+          name: 'New Cool Plugin',
+          id: 'cool-plugin-2023',
+          version: '1.0.0',
+          author: 'Developer Name',
+          category: 'Games',
+          description: 'This plugin adds cool new functionality to your Construct 2 projects.'
+        });
+      }
+    } else {
+      // For demo purposes when API is not available
+      const mockPath = 'C:\\Users\\User\\Downloads\\NewPlugin';
+      resourcePathInput.value = mockPath;
+      
+      // Show preview with mock data
+      showResourcePreview({
+        name: 'New Cool Plugin',
+        id: 'cool-plugin-2023',
+        version: '1.0.0',
+        author: 'Developer Name',
+        category: 'Games',
+        description: 'This plugin adds cool new functionality to your Construct 2 projects.'
+      });
+      
+      console.log("Note: In a real app, this would open a folder selection dialog");
+    }
+    
+    // Update validation
+    validateResourceForm();
+  } catch (error) {
+    console.error("Error selecting folder:", error);
+    showResourceError("Failed to open folder selection dialog. Please try again.");
+  }
+});
+
+// Add resource button
+confirmAddResourceBtn.addEventListener('click', () => {
+  // Get the selected resource type
+  const selectedType = document.querySelector('.resource-type-option.active').dataset.type;
+  const resourcePath = resourcePathInput.value;
+  
+  // Simulate checking for conflicts (in a real app, this would check if the resource already exists)
+  const hasConflict = Math.random() > 0.5; // 50% chance of conflict for demo
+  
+  if (hasConflict) {
+    // Show conflict modal
+    conflictResourceName.textContent = 'New Cool Plugin';
+    resourceConflictModal.classList.add('active');
+  } else {
+    // Show success modal
+    successResourceName.textContent = 'New Cool Plugin';
+    resourceAddedModal.classList.add('active');
+    // Close the add resource modal
+    closeAddResourceModal();
+  }
+});
+
+// Success modal buttons
+closeSuccessModalBtn.addEventListener('click', () => {
+  resourceAddedModal.classList.remove('active');
+});
+
+okSuccessBtn.addEventListener('click', () => {
+  resourceAddedModal.classList.remove('active');
+});
+
+// Conflict modal buttons
+closeConflictModalBtn.addEventListener('click', () => {
+  resourceConflictModal.classList.remove('active');
+});
+
+cancelOverwriteBtn.addEventListener('click', () => {
+  resourceConflictModal.classList.remove('active');
+});
+
+confirmOverwriteBtn.addEventListener('click', () => {
+  // In a real app, this would overwrite the existing resource
+  resourceConflictModal.classList.remove('active');
+  // Show success message
+  successResourceName.textContent = 'New Cool Plugin';
+  resourceAddedModal.classList.add('active');
+  // Close the add resource modal
+  closeAddResourceModal();
+});
+
+// Helper functions for Add Resource modal
+function resetAddResourceForm() {
+  // Reset resource type selection
+  resourceTypeOptions.forEach(opt => opt.classList.remove('active'));
+  resourceTypeOptions[0].classList.add('active'); // Select the first option by default
+  
+  // Reset path input
+  resourcePathInput.value = '';
+  
+  // Hide error and preview
+  resourceErrorContainer.classList.add('hidden');
+  resourcePreview.classList.add('hidden');
+  
+  // Disable add button
+  confirmAddResourceBtn.disabled = true;
+}
+
+function validateResourceForm() {
+  // Check if a resource type is selected
+  const hasType = document.querySelector('.resource-type-option.active') !== null;
+  
+  // Check if path is entered
+  const hasPath = resourcePathInput.value.trim() !== '';
+  
+  // Enable/disable add button
+  confirmAddResourceBtn.disabled = !(hasType && hasPath);
+  
+  return hasType && hasPath;
+}
+
+function showResourcePreview(resource) {
+  // Set preview data
+  document.getElementById('preview-name').textContent = resource.name;
+  document.getElementById('preview-id').textContent = resource.id;
+  document.getElementById('preview-version').textContent = resource.version;
+  document.getElementById('preview-author').textContent = resource.author;
+  document.getElementById('preview-category').textContent = resource.category;
+  document.getElementById('preview-description').textContent = resource.description;
+  
+  // Show the resource type icon in preview
+  const selectedType = document.querySelector('.resource-type-option.active').dataset.type;
+  let iconText = '🔌'; // Default to plugin
+  
+  if (selectedType === 'behavior') {
+    iconText = '🔄';
+  } else if (selectedType === 'effect') {
+    iconText = '✨';
+  }
+  
+  // In a real app, this would be an actual image
+  // For this demo, we'll use emoji as placeholder
+  document.getElementById('preview-icon-img').innerHTML = iconText;
+  
+  // Show the preview section
+  resourcePreview.classList.remove('hidden');
+}
+
+function showResourceError(message) {
+  errorMessageElement.textContent = message;
+  resourceErrorContainer.classList.remove('hidden');
+}
+
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
   renderItems();
   
   // Add keyboard shortcuts
   document.addEventListener('keydown', (e) => {
-    // Escape to close modal
-    if (e.key === 'Escape' && itemDetailsModal.classList.contains('active')) {
-      closeItemDetails();
+    // Escape to close modals
+    if (e.key === 'Escape') {
+      if (itemDetailsModal.classList.contains('active')) {
+        closeItemDetails();
+      }
+      if (addResourceModal.classList.contains('active')) {
+        closeAddResourceModal();
+      }
+      if (settingsModal.classList.contains('active')) {
+        settingsModal.classList.remove('active');
+      }
+      if (resourceAddedModal.classList.contains('active')) {
+        resourceAddedModal.classList.remove('active');
+      }
+      if (resourceConflictModal.classList.contains('active')) {
+        resourceConflictModal.classList.remove('active');
+      }
     }
     
     // Ctrl+F to focus search
@@ -369,3 +613,107 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+// Initialize ResourceManager
+const resourceManager = new ResourceManager();
+
+// Browse resource button
+browseResourceBtn.addEventListener('click', async () => {
+  try {
+    // Try to use the Electron API to select a folder
+    if (window.api && window.api.selectFolder) {
+      const paths = await window.api.selectFolder();
+      if (paths && paths.length > 0) {
+        resourcePathInput.value = paths[0];
+        
+        // Show empty preview form for the user to fill in
+        resourceManager.showEmptyPreview();
+      }
+    } else {
+      // For demo purposes when API is not available
+      const mockPath = 'C:\\Users\\User\\Downloads\\NewPlugin';
+      resourcePathInput.value = mockPath;
+      
+      // Show empty preview form
+      resourceManager.showEmptyPreview();
+      
+      console.log("Note: In a real app, this would open a folder selection dialog");
+    }
+  } catch (error) {
+    console.error("Error selecting folder:", error);
+    resourceManager.showError("Failed to open folder selection dialog. Please try again.");
+  }
+});
+
+// Add resource button
+confirmAddResourceBtn.addEventListener('click', async () => {
+  if (!resourceManager.validateForm()) {
+    resourceManager.showError("Please fill in all required fields.");
+    return;
+  }
+  
+  // Get resource data
+  const resourceData = resourceManager.getResourceData();
+  
+  // Try to add the resource
+  try {
+    // In a real app, this would use the window.api
+    if (window.api) {
+      // Check if resource exists
+      const exists = await window.api.checkResourceExists(resourceData.type, resourceData.id);
+      
+      if (exists) {
+        // Confirm overwrite
+        const shouldOverwrite = await resourceManager.confirmOverwrite(resourceData.name);
+        
+        if (!shouldOverwrite) {
+          return;
+        }
+      }
+      
+      // Create resource directories
+      await window.api.createResourceDirectories();
+      
+      // Copy resource files
+      await window.api.copyResourceFiles(resourceData.path, resourceData.type, resourceData.id);
+      
+      // Save resource metadata
+      await window.api.saveResourceMetadata(resourceData);
+      
+      // Show success message
+      resourceManager.showSuccessMessage(resourceData.name);
+      
+      // Close the add resource modal
+      closeAddResourceModal();
+      
+      // Refresh the items list
+      refreshItemsList();
+    } else {
+      // Demo version
+      // Simulate adding resource
+      setTimeout(() => {
+        resourceManager.showSuccessMessage(resourceData.name);
+        closeAddResourceModal();
+      }, 500);
+    }
+  } catch (error) {
+    console.error("Error adding resource:", error);
+    resourceManager.showError("Failed to add resource: " + error.message);
+  }
+});
+
+// Add this function to refresh the items list
+async function refreshItemsList() {
+  try {
+    if (window.api && window.api.getAllResources) {
+      const resources = await window.api.getAllResources();
+      // Update your items display with the resources
+      // For now, we'll just call renderItems() to show the sample data
+      renderItems();
+    } else {
+      renderItems();
+    }
+  } catch (error) {
+    console.error("Error refreshing items list:", error);
+  }
+}

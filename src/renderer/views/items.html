@@ -73,6 +73,8 @@
             <option value="date-added">Date Added</option>
           </select>
         </div>
+        <!-- Add Resource Button -->
+        <button id="add-resource-btn-open" class="btn primary-btn">Add Resource</button>
       </div>
 
       <!-- Items Grid -->
@@ -164,6 +166,141 @@
     </div>
   </div>
 
+  <!-- Add Resource Modal -->
+  <div id="add-resource-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Add Resource</h2>
+        <div class="modal-close" id="close-add-resource-modal">✕</div>
+      </div>
+      <div class="modal-body">
+        <div class="section-title">Resource Type</div>
+        <div class="resource-type-selection">
+          <div class="resource-type-option active" data-type="plugin">
+            <div class="resource-type-icon">🔌</div>
+            <div class="resource-type-label">Plugin</div>
+          </div>
+          <div class="resource-type-option" data-type="behavior">
+            <div class="resource-type-icon">🔄</div>
+            <div class="resource-type-label">Behavior</div>
+          </div>
+          <div class="resource-type-option" data-type="effect">
+            <div class="resource-type-icon">✨</div>
+            <div class="resource-type-label">Effect</div>
+          </div>
+        </div>
+
+        <div class="section-title">Resource Location</div>
+        <div class="resource-path-container">
+          <input type="text" id="resource-path-input" class="text-input" placeholder="Select resource folder..." readonly>
+          <button id="browse-resource-btn" class="btn secondary-btn">Browse</button>
+        </div>
+
+        <div id="resource-error" class="resource-error hidden">
+          <div class="error-icon">⚠️</div>
+          <div id="error-message" class="error-message">Error message here</div>
+        </div>
+
+        <div id="resource-preview" class="resource-preview hidden">
+          <div class="section-title">Resource Details</div>
+          <div class="preview-editable">
+            <div class="preview-two-columns">
+              <div class="preview-field">
+                <label for="preview-name-input">Name</label>
+                <input type="text" id="preview-name-input" placeholder="Resource name">
+              </div>
+              
+              <div class="preview-field">
+                <label for="preview-id-input">ID</label>
+                <input type="text" id="preview-id-input" placeholder="Unique identifier">
+              </div>
+            </div>
+            
+            <div class="preview-two-columns">
+              <div class="preview-field">
+                <label for="preview-version-input">Version</label>
+                <input type="text" id="preview-version-input" placeholder="e.g. 1.0.0">
+              </div>
+              
+              <div class="preview-field">
+                <label for="preview-author-input">Author</label>
+                <input type="text" id="preview-author-input" placeholder="Author name">
+              </div>
+            </div>
+            
+            <div class="preview-field">
+              <label for="preview-category-input">Category</label>
+              <input type="text" id="preview-category-input" placeholder="Resource category">
+            </div>
+            
+            <div class="preview-field">
+              <label>Icon</label>
+              <div class="icon-selection">
+                <div class="icon-option selected" data-icon="🔌">🔌</div>
+                <div class="icon-option" data-icon="🔄">🔄</div>
+                <div class="icon-option" data-icon="✨">✨</div>
+                <div class="icon-option" data-icon="📊">📊</div>
+                <div class="icon-option" data-icon="🎮">🎮</div>
+                <div class="icon-option" data-icon="🎵">🎵</div>
+              </div>
+            </div>
+            
+            <div class="preview-field full-width">
+              <label for="preview-description-input">Description</label>
+              <textarea id="preview-description-input" placeholder="Describe the resource functionality..."></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-buttons">
+          <button id="cancel-add-resource-btn" class="btn secondary-btn">Cancel</button>
+          <button id="add-resource-btn" class="btn primary-btn" disabled>Add Resource</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resource Added Success Modal -->
+  <div id="resource-added-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Resource Added</h2>
+        <div class="modal-close" id="close-success-modal">✕</div>
+      </div>
+      <div class="modal-body">
+        <div class="success-icon">✅</div>
+        <div class="success-message">
+          The resource <span id="success-resource-name" class="resource-name">-</span> has been successfully added to your library.
+        </div>
+        <div class="modal-buttons">
+          <button id="ok-success-btn" class="btn primary-btn">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resource Conflict Modal -->
+  <div id="resource-conflict-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Resource Conflict</h2>
+        <div class="modal-close" id="close-conflict-modal">✕</div>
+      </div>
+      <div class="modal-body">
+        <div class="warning-icon">⚠️</div>
+        <div class="conflict-message">
+          A resource named <span id="conflict-resource-name" class="resource-name">-</span> already exists in your library.
+        </div>
+        <div class="conflict-question">Do you want to overwrite it?</div>
+        <div class="modal-buttons">
+          <button id="cancel-overwrite-btn" class="btn secondary-btn">Cancel</button>
+          <button id="confirm-overwrite-btn" class="btn primary-btn">Overwrite</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../scripts/ResourceManager.js"></script>
   <script src="../scripts/items.js"></script>
 </body>
 </html>

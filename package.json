@@ -4,12 +4,16 @@
     "description": "Addon Manager for Construct 2 and 3",
     "main": "src/main/main.js",
     "scripts": {
-      "start": "electron ."
+        "start": "electron .",
+        "dev": "cross-env NODE_ENV=development electron . --inspect"
     },
     "author": "",
     "license": "ISC",
     "dependencies": {
-      "electron": "^29.1.0",
-      "is-admin": "^3.0.0"
+        "electron": "^29.1.0",
+        "is-admin": "^3.0.0"
+    },
+    "devDependencies": {
+        "cross-env": "^7.0.3"
     }
-  }
+}
