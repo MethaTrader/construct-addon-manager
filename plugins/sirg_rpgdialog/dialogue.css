@@ -1,0 +1,35 @@
+#rpgdialog{
+	width:100%;
+	margin:0 auto;
+	text-align:left !important;
+}
+
+#rpgdialog ul{
+	margin:0;
+	padding:0;
+	list-style: inside;
+}
+
+/* Стиль отображения текста и пункта выбора */
+#rpgdialog p, #rpgdialog li{
+	margin:0;
+	padding:0.3em 1em;
+	cursor:pointer;
+	color:#fff;/* цвет */
+	font-weight:bold;/* жирный шрифт */
+}
+
+/* Стиль отображения пункта выбора */
+#rpgdialog li{
+	text-decoration:underline;/* подчеркивание текста */
+}
+/* Стиль отображения имени персонажа */
+#rpgdialog .actor{
+	/*display:block;*/
+}
+/* Стиль отображения аватара персонажа */
+#rpgdialog .avatar{
+	border:1px solid #ff0000;
+	padding:5px;
+	float:left;
+}

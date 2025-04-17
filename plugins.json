@@ -1,0 +1,1843 @@
+[
+  {
+    "name": "2D_Starfield_Shape",
+    "description": "8 Layers shape Starfield",
+    "version": "1.0",
+    "author": "Gigatron",
+    "path": "plugins/2dstarfieldShape"
+  },
+  {
+    "name": "Multiline box",
+    "description": "A multiline text field for the user to enter text in to.",
+    "version": "1.14",
+    "author": "Gregory Georges",
+    "path": "plugins/7_MultilineBox"
+  },
+  {
+    "name": "Toggle Button",
+    "description": "Add a iPhone-like toggle button into your project.",
+    "version": "1.22",
+    "author": "Gregory Georges",
+    "path": "plugins/7_ToggleButton"
+  },
+  {
+    "name": "AirConsole",
+    "description": "Extend your game with local multiplayer fun",
+    "version": "1.0",
+    "author": "N-Dream AG",
+    "path": "plugins/airconsole"
+  },
+  {
+    "name": "AlertBlocker",
+    "description": "Blocks browser alert windows",
+    "version": "1.0",
+    "author": "Exit Games",
+    "path": "plugins/alertblocker"
+  },
+  {
+    "name": "Android Dialog",
+    "description": "Add Android dialogs in your project.",
+    "version": "1.0",
+    "author": "inf",
+    "path": "plugins/android_dialog"
+  },
+  {
+    "name": "PushJs",
+    "description": "Include push alerts into the project.",
+    "version": "1.0",
+    "author": "Andrews Vinícius & nickersoft",
+    "path": "plugins/andy_pushjs"
+  },
+  {
+    "name": "Appodeal Plugin",
+    "description": "Appodeal Plugin Scirra Consruct 2",
+    "version": "1.12",
+    "author": "Appodeal",
+    "path": "plugins/appodeal1"
+  },
+  {
+    "name": "Scirra Arcade",
+    "description": "Submit hi-scores on the Scirra Arcade.",
+    "version": "1.0",
+    "author": "Scirra",
+    "path": "plugins/arcadev4"
+  },
+  {
+    "name": "Mandrill",
+    "description": "Send E-Mails and access other features powered by Mandrill on a variety of platforms.",
+    "version": "1.0",
+    "author": "Armaldio",
+    "path": "plugins/armaldio-c2-mandrill-25513ec6d3ef"
+  },
+  {
+    "name": "Electron",
+    "description": "Run your game with the best performances inside Electron",
+    "version": "0.2.12",
+    "author": "Armaldio",
+    "path": "plugins/armaldio_electron"
+  },
+  {
+    "name": "CocoonJSBackButton",
+    "description": "Access Android Back-button when using CocoonJS.",
+    "version": "1.01",
+    "author": "Timo Polvinen android.timo@gmail.com",
+    "path": "plugins/backbutton"
+  },
+  {
+    "name": "Google Analytics",
+    "description": "Google Analytics Plugin",
+    "version": "1.0",
+    "author": "Sun Temple",
+    "path": "plugins/c2_google_analytics"
+  },
+  {
+    "name": "Cheat Code",
+    "description": "Easy easter eggs (konami code, etc) for your games.",
+    "version": "1.1",
+    "author": "Jonathan Ayala",
+    "path": "plugins/cheatcode"
+  },
+  {
+    "name": "Cocoon Ads",
+    "description": "Cocoon plugin for Ads",
+    "version": "1.0",
+    "author": "Ludei",
+    "path": "plugins/cocoon-ads"
+  },
+  {
+    "name": "Cocoon Facebook",
+    "description": "Cocoon plugin for Facebook",
+    "version": "1.0",
+    "author": "Ludei",
+    "path": "plugins/cocoon-fb"
+  },
+  {
+    "name": "Cocoon GameCenter",
+    "description": "Cocoon plugin for Game Center",
+    "version": "1.0",
+    "author": "Ludei",
+    "path": "plugins/cocoon-gc"
+  },
+  {
+    "name": "Cocoon GooglePlayGames",
+    "description": "Cocoon plugin for Google Play Games",
+    "version": "1.0",
+    "author": "Ludei",
+    "path": "plugins/cocoon-gpg"
+  },
+  {
+    "name": "Cocoon InApps",
+    "description": "Cocoon plugin for In-App Purchases",
+    "version": "1.0",
+    "author": "Ludei",
+    "path": "plugins/cocoon-inapps"
+  },
+  {
+    "name": "Cocoon Share",
+    "description": "Cocoon plugin for Share",
+    "version": "1.0",
+    "author": "Ludei",
+    "path": "plugins/cocoon-share"
+  },
+  {
+    "name": "CocoonJS",
+    "description": "Access CocoonJS extensions like ads and in-app purchases.",
+    "version": "1.0",
+    "author": "Scirra",
+    "path": "plugins/cocoonjsads"
+  },
+  {
+    "name": "Cocoon Canvasplus",
+    "description": "Access to Canvas+ basic functionalities",
+    "version": "1.0",
+    "author": "Ludei",
+    "path": "plugins/cocoon_canvasplus"
+  },
+  {
+    "name": "Colyseus",
+    "description": "Allows you to develop develop multiplayer games using Colyseus.",
+    "version": "0.9.4",
+    "author": "Endel Dreyer",
+    "path": "plugins/Colyseus"
+  },
+  {
+    "name": "Cordova BluetoothSerial",
+    "description": "enables serial communication over bluetooth.",
+    "version": "1.0.15",
+    "author": "cranberrygame",
+    "path": "plugins/cranberrygame_CordovaBluetoothSerial"
+  },
+  {
+    "name": "Cordova Chartboost",
+    "description": "show chartboost interstitial (static interstitial, video interstial), more apps, rewarded video ad.",
+    "version": "1.0.24",
+    "author": "cranberrygame",
+    "path": "plugins/cranberrygame_CordovaChartboost"
+  },
+  {
+    "name": "Cordova Dialog",
+    "description": "show dialog message.",
+    "version": "1.0.14",
+    "author": "cranberrygame",
+    "path": "plugins/cranberrygame_CordovaDialog"
+  },
+  {
+    "name": "Cordova GoogleAnalytics",
+    "description": "google analytics",
+    "version": "1.0.12",
+    "author": "cranberrygame",
+    "path": "plugins/cranberrygame_CordovaGoogleAnalytics"
+  },
+  {
+    "name": "Cordova iAd",
+    "description": "show iad banner ad.",
+    "version": "1.0.21",
+    "author": "cranberrygame",
+    "path": "plugins/cranberrygame_CordovaiAd"
+  },
+  {
+    "name": "Cordova IAP",
+    "description": "in app purchase",
+    "version": "2.0.48",
+    "author": "cranberrygame",
+    "path": "plugins/cranberrygame_CordovaIAP"
+  },
+  {
+    "name": "Cordova LocalNotification",
+    "description": "send local notification even if app exits.",
+    "version": "1.0.20",
+    "author": "cranberrygame",
+    "path": "plugins/cranberrygame_CordovaLocalNotification"
+  },
+  {
+    "name": "Cordova OptionsMenu",
+    "description": "show android options menu.",
+    "version": "1.0.11",
+    "author": "cranberrygame",
+    "path": "plugins/cranberrygame_CordovaOptionsMenu"
+  },
+  {
+    "name": "Cordova WebViewPlus",
+    "description": "support ludei Webview+ for android 4.x",
+    "version": "1.0.7",
+    "author": "cranberrygame",
+    "path": "plugins/cranberrygame_CordovaWebViewPlus"
+  },
+  {
+    "name": "Cordova WKWebView",
+    "description": "support apple WKWebView for ios8.",
+    "version": "1.0.5",
+    "author": "cranberrygame",
+    "path": "plugins/cranberrygame_CordovaWKWebView"
+  },
+  {
+    "name": "LevelSelection",
+    "description": "manage levels buttons easily.",
+    "version": "1.0.23",
+    "author": "cranberrygame",
+    "path": "plugins/cranberrygame_LevelSelection"
+  },
+  {
+    "name": "Phonegap Game",
+    "description": "show leaderboard and achievements (google play game and game center, SDK)",
+    "version": "1.0.46",
+    "author": "cranberrygame",
+    "path": "plugins/cranberrygame_PhonegapGame_1.0.65_free"
+  },
+  {
+    "name": "Phonegap IAP",
+    "description": "in app purchase",
+    "version": "2.0.25",
+    "author": "cranberrygame",
+    "path": "plugins/cranberrygame_PhonegapIAP_2.0.36_free"
+  },
+  {
+    "name": "Record",
+    "description": "provide functionality to record socre (highest score) and time (lowest time) in local.",
+    "version": "1.0.1",
+    "author": "cranberrygame",
+    "path": "plugins/cranberrygame_Record"
+  },
+  {
+    "name": "Translation",
+    "description": "provide simple translation text from JSON.",
+    "version": "1.0.3",
+    "author": "cranberrygame",
+    "path": "plugins/cranberrygame_Translation"
+  },
+  {
+    "name": "drawsprite",
+    "description": "Parse text string",
+    "version": "1.0",
+    "author": "rfisher",
+    "path": "plugins/drawsprite"
+  },
+  {
+    "name": "Text (Drop shadow)",
+    "description": "Displays some text with a drop shadow effect.",
+    "version": "1.3",
+    "author": "ramones",
+    "path": "plugins/dropshadowtext"
+  },
+  {
+    "name": "GameJolt",
+    "description": "http://gamejolt.com API implementation by YellowAfterlife.",
+    "version": "1.1",
+    "author": "YellowAfterlife",
+    "path": "plugins/gamejolt"
+  },
+  {
+    "name": "Trace",
+    "description": "Use line and box traces to make your objects more aware of their surroundings.",
+    "version": "0.4",
+    "author": "Jcw87",
+    "path": "plugins/jcw_trace"
+  },
+  {
+    "name": "Math Function",
+    "description": "Draw math graphs.",
+    "version": "1.0",
+    "author": "Joe7",
+    "path": "plugins/joe7_mathFunction"
+  },
+  {
+    "name": "Layout Transition",
+    "description": "Transition Animation between layouts",
+    "version": "1.2",
+    "author": "HMMG",
+    "path": "plugins/layoutTransition"
+  },
+  {
+    "name": "jSFXR",
+    "description": "jSFXR for C2",
+    "version": "1.0",
+    "author": "Oxnard",
+    "path": "plugins/oxnard_jsfxr"
+  },
+  {
+    "name": "Perfect Ads",
+    "description": "Complex AdMob ads plugin for Cocoon, Phonegap, Cordova CLI.",
+    "version": "1.0",
+    "author": "Steel",
+    "path": "plugins/perfectads"
+  },
+  {
+    "name": "Photon",
+    "description": "Add multiplayer to your games and launch them globally with the included FREE Photon Cloud plan",
+    "version": "1.0",
+    "author": "Exit Games",
+    "path": "plugins/photon"
+  },
+  {
+    "name": "Photon Chat",
+    "description": "Easily integrate a cross-platform chat system in your apps that scales to any amount of concurrent chats",
+    "version": "1.0",
+    "author": "Exit Games",
+    "path": "plugins/photon-chat"
+  },
+  {
+    "name": "FileReader",
+    "description": "Read files from local filesystem",
+    "version": "1.1",
+    "author": "JP Deblonde",
+    "path": "plugins/pode_filereader"
+  },
+  {
+    "name": "FileSaver",
+    "description": "Save files on disk, when available",
+    "version": "1.1",
+    "author": "JP Deblonde",
+    "path": "plugins/pode_filesaver"
+  },
+  {
+    "name": "SpriterImport",
+    "description": "Import work done with Sprite inside Construct2",
+    "version": "1.0",
+    "author": "JP Deblonde",
+    "path": "plugins/pode_Spriter"
+  },
+  {
+    "name": "Polygon",
+    "description": "Draw collision aware polygons",
+    "version": "1.0",
+    "author": "Yann Granjon",
+    "path": "plugins/polygon"
+  },
+  {
+    "name": "Protracker",
+    "description": "Play Protracker, Fasttracker and ScreamTracker Modules",
+    "version": "0.20",
+    "author": "Gigatron",
+    "path": "plugins/ptrack"
+  },
+  {
+    "name": "Achievements",
+    "description": "Achievements in csv table.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_achievements"
+  },
+  {
+    "name": "Angle to ArrowKey",
+    "description": "Mapping angle input to arrow key event.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_angle2ArrowkeyMap"
+  },
+  {
+    "name": "ANN",
+    "description": "Artificial Neural Network, using back-propagation and one hidden layer.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_ANN"
+  },
+  {
+    "name": "Timer",
+    "description": "Timer service. http://api.shephertz.com/app42-docs/timer-service/",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_appwarp_timer"
+  },
+  {
+    "name": "Audio helper",
+    "description": "Some helper methods for audio object",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_audio_helper"
+  },
+  {
+    "name": "Backendless API",
+    "description": "API of database-as-a-service. https://backendless.com/",
+    "version": "3.1.5",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_backendless_api"
+  },
+  {
+    "name": "Authentication",
+    "description": "Authentication which is provided by backendless. https://backendless.com/",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_backendless_authentication"
+  },
+  {
+    "name": "Counter",
+    "description": "Atomic Counters to increase or decrease value.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_backendless_counter"
+  },
+  {
+    "name": "Files",
+    "description": "Files stored in backendless serivice.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_backendless_files"
+  },
+  {
+    "name": "Item table",
+    "description": "Items table indexed by (itemID, key), supports writing an item or reading items back.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_backendless_itemtable"
+  },
+  {
+    "name": "Leaderboard",
+    "description": "Leader board built on backendless.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_backendless_leaderboard"
+  },
+  {
+    "name": "Message",
+    "description": "Send/receive messages.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_backendless_message"
+  },
+  {
+    "name": "Save slot",
+    "description": "Save slot on backendless.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_backendless_savedata"
+  },
+  {
+    "name": "Timer",
+    "description": "Get elapsed interval from backendless.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_backendless_timer"
+  },
+  {
+    "name": "Bahamut",
+    "description": "Get user data from Bahamut website. http://www.gamer.com.tw/",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_bahamut"
+  },
+  {
+    "name": "BBcode Text",
+    "description": "Displays text with bbcode protocol.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_bbcodeText"
+  },
+  {
+    "name": "Board",
+    "description": "Store the logical position of chess, based plugin of my board-series plugins/behaviors.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_board"
+  },
+  {
+    "name": "Cube Tx",
+    "description": "Transfer logic position to physical position with 3D orthogonal or isometric layout",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_board_cubeTx"
+  },
+  {
+    "name": "Edge",
+    "description": "Maintain edges on a board.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_board_edge"
+  },
+  {
+    "name": "Hex shape map",
+    "description": "Shape map of hex grid",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_board_hexShapeMap"
+  },
+  {
+    "name": "Hex Tx",
+    "description": "Transfer logic position to physical position with hexagonal layout",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_board_hexTx"
+  },
+  {
+    "name": "Projection Tx",
+    "description": "Transfer logic position to physical position with projection layout",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_board_projectionTx"
+  },
+  {
+    "name": "Square Tx",
+    "description": "Transfer logic position to physical position with orthogonal or isometric layout",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_board_squareTx"
+  },
+  {
+    "name": "Canvas",
+    "description": "Canvas element and api. https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_canvas"
+  },
+  {
+    "name": "Comments",
+    "description": "Show comments in actions.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_comment"
+  },
+  {
+    "name": "Container",
+    "description": "Put sprites or other objects into this box.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_container"
+  },
+  {
+    "name": "Copy to clipboard",
+    "description": "Copy string to clipboard",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_copyToClipboard"
+  },
+  {
+    "name": "CSV",
+    "description": "Read 2d table from csv string.",
+    "version": "1.0",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_csv"
+  },
+  {
+    "name": "CSV to Array",
+    "description": "Transfer csv string to array object",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_csv2array"
+  },
+  {
+    "name": "CSV to Dictionary",
+    "description": "Transfer csv string to dictionary object",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_csv2dictionary"
+  },
+  {
+    "name": "Date",
+    "description": "Get system data and time",
+    "version": "1.0",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_date"
+  },
+  {
+    "name": "Date in a row",
+    "description": "Get continuous date count.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_dateInARow"
+  },
+  {
+    "name": "Dice",
+    "description": "Roll dice",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_dice"
+  },
+  {
+    "name": "Dictionary Cache",
+    "description": "Dictionary cache for local storage.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_dictionaryLCache"
+  },
+  {
+    "name": "Dragging to ArrowKey",
+    "description": "Get arrow key event from dragging input.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_dragArrowKey"
+  },
+  {
+    "name": "Dungeon gen",
+    "description": "Generate random dungeon map asynchronously.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_dungeon_gen"
+  },
+  {
+    "name": "XOR Encryption",
+    "description": "Encryption & Decryption by XOR Encryption algorithm.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_encdec_xor"
+  },
+  {
+    "name": "Simple XOR Encryption",
+    "description": "Encryption & Decryption by XOR Encryption algorithm.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_encdec_xor_simple"
+  },
+  {
+    "name": "Event balancer",
+    "description": "Divide heavy looping into ticks",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_eventbalancer"
+  },
+  {
+    "name": "Exif parser",
+    "description": "Get exif inforamtion. https://github.com/jseidelin/exif-js",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_exif_parser"
+  },
+  {
+    "name": "Fabric",
+    "description": "Canvas library. http://fabricjs.com/",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_fabricjs"
+  },
+  {
+    "name": "Firebase",
+    "description": "Real time database-as-a-service. https://www.firebase.com/",
+    "version": "1.3.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_firebase"
+  },
+  {
+    "name": "Firebase API",
+    "description": "API of real time database-as-a-service. https://www.firebase.com/",
+    "version": "2.4.2",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_firebase_api"
+  },
+  {
+    "name": "Firebase API v3",
+    "description": "3.x API of real time database-as-a-service. https://firebase.google.com/",
+    "version": "3.3.0",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_firebase_apiV3"
+  },
+  {
+    "name": "Authentication",
+    "description": "Authentication which is provided by firebase. https://www.firebase.com/",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_firebase_authentication"
+  },
+  {
+    "name": "Counter",
+    "description": "Counter to increase or decrease value.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_firebase_counter"
+  },
+  {
+    "name": "Current timestamp",
+    "description": "Get server timestamp periodically.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_firebase_curTime"
+  },
+  {
+    "name": "Geofire",
+    "description": "Realtime location queries with Firebase.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_firebase_geofire"
+  },
+  {
+    "name": "Item book",
+    "description": "Item tables to save and query items. Each value is indexed by (tableID, itemID, key).",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_firebase_itembook"
+  },
+  {
+    "name": "Item filter",
+    "description": "Query itemIDs with condition filters.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_firebase_itemfilter"
+  },
+  {
+    "name": "Item monitor",
+    "description": "Monitor items' values.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_firebase_itemmonitor"
+  },
+  {
+    "name": "Item table",
+    "description": "Items table indexed by (itemID, key), supports writing a item or reading items back.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_firebase_itemtable"
+  },
+  {
+    "name": "Leader board",
+    "description": "Leader board built on firebase.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_firebase_leaderboard"
+  },
+  {
+    "name": "Message",
+    "description": "Send/receive messages.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_firebase_message"
+  },
+  {
+    "name": "Query",
+    "description": "Query in firebase.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_firebase_query"
+  },
+  {
+    "name": "Rooms",
+    "description": "Rooms management.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_firebase_rooms"
+  },
+  {
+    "name": "Save slot",
+    "description": "Private save slots.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_firebase_savedata"
+  },
+  {
+    "name": "Simple message",
+    "description": "Send message to ID.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_firebase_simplemessage"
+  },
+  {
+    "name": "Single login",
+    "description": "Test if user account had been logined on one client only.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_firebase_singleLogin"
+  },
+  {
+    "name": "Storage",
+    "description": "File storage in firebase serivice (v3.x only).",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_firebase_storage"
+  },
+  {
+    "name": "Sync queue",
+    "description": "Sync queue on firebase.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_firebase_syncqueue"
+  },
+  {
+    "name": "Timer",
+    "description": "Get elapsed interval from firebase.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_firebase_timer"
+  },
+  {
+    "name": "Token",
+    "description": "The first user of a group.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_firebase_token"
+  },
+  {
+    "name": "UserID to ID",
+    "description": "Each UserID could register an alias ID.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_firebase_userid2id"
+  },
+  {
+    "name": "User list",
+    "description": "User lists on firebase.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_firebase_userlist"
+  },
+  {
+    "name": "Function call package",
+    "description": "Pack function call(s) into JSON string, or call function(s) by this JSON string.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_fnCallPkg"
+  },
+  {
+    "name": "FnParam to Array",
+    "description": "Create an array and dump parameters of current function into this array.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_fnParam2array"
+  },
+  {
+    "name": "Frame message",
+    "description": "Call function (postMessage) on other frames.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_frame_message"
+  },
+  {
+    "name": "Function",
+    "description": "(Deprecated) Call named events from actions and expressions.",
+    "version": "1.0",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_function"
+  },
+  {
+    "name": "Function2",
+    "description": "Run other events in an action, like functions in programming languages.",
+    "version": "1.0",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_function2"
+  },
+  {
+    "name": "Function2M",
+    "description": "Run other events in an action, like functions in programming languages. Support multiple instances to organize functions more better.",
+    "version": "",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_function2M"
+  },
+  {
+    "name": "Fuzzy",
+    "description": "Fuzzy logic",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_fuzzy"
+  },
+  {
+    "name": "Geocoding",
+    "description": "Converting between geographic coordinates and human-readable address.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_geocoding"
+  },
+  {
+    "name": "FSM",
+    "description": "Finite state machine",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_gfsm"
+  },
+  {
+    "name": "GIF render",
+    "description": "GIF encoder. Reference: https://github.com/jnordberg/gif.js",
+    "version": "1.0",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_gifjs"
+  },
+  {
+    "name": "Inst Group",
+    "description": "A set/list to store instances by uid",
+    "version": "1.0",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_ginstgroup"
+  },
+  {
+    "name": "Layouter",
+    "description": "Layout instances to get position and angle.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_glayouter"
+  },
+  {
+    "name": "Google map",
+    "description": "Display google map at a div element.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_googlemap"
+  },
+  {
+    "name": "Google map api",
+    "description": "Load google map api.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_googlemap_api"
+  },
+  {
+    "name": "Info window",
+    "description": "Info window of google map.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_googlemap_infowindow"
+  },
+  {
+    "name": "Marker",
+    "description": "Marker of google map.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_googlemap_marker"
+  },
+  {
+    "name": "Web font loader",
+    "description": "Loads web font then gets web font loaded events.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_google_webfontloader"
+  },
+  {
+    "name": "Graph",
+    "description": "Graph with vertices and edges.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_graph"
+  },
+  {
+    "name": "graph movement",
+    "description": "Get moveable or moving path on the graph.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_graph_movement"
+  },
+  {
+    "name": "Grid control",
+    "description": "Manipulate instances of each grid in a table.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_gridCtrl"
+  },
+  {
+    "name": "Grid freezer",
+    "description": "Save/load instances with grids.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_gridfreezer"
+  },
+  {
+    "name": "JSON",
+    "description": "Manipulate JSON data.",
+    "version": "0.5",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_hash"
+  },
+  {
+    "name": "Iframe filter",
+    "description": "Check if current page is in an iframe or not.",
+    "version": "0.8",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_iframe_filter"
+  },
+  {
+    "name": "INI",
+    "description": "INI <--> JSON. Reference: https://github.com/npm/ini",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_ini"
+  },
+  {
+    "name": "Instance Bank",
+    "description": "Save/Load instances.",
+    "version": "0.8",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_instbank"
+  },
+  {
+    "name": "Instance Bank 2",
+    "description": "Save/Load instances.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_instbank2"
+  },
+  {
+    "name": "JSMIDIparser",
+    "description": "Convert a midi binary data to JSON to get note events.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_JSMidiParser"
+  },
+  {
+    "name": "JSON buider",
+    "description": "Build JSON structure.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_json_builder"
+  },
+  {
+    "name": "JS Shell",
+    "description": "Invoke javascript function.",
+    "version": "1.0",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_jsshell"
+  },
+  {
+    "name": "Kongregate",
+    "description": "Api of kongregate. Reference: https://docs.kongregate.com/v1.0/docs/javascript-api",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_kongregate"
+  },
+  {
+    "name": "Layer",
+    "description": "Adding behavior to change the scale/anlge/opacity/visible of layer.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_layer"
+  },
+  {
+    "name": "Layout to Board",
+    "description": "Put layout's instances into board.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_layout2board"
+  },
+  {
+    "name": "Layout freezer",
+    "description": "Save/Load non-global instances on the layout.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_layoutfreezer"
+  },
+  {
+    "name": "List control",
+    "description": "Manipulate instances of each line in a list.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_listCtrl"
+  },
+  {
+    "name": "Live2D Object",
+    "description": "Load and play Live2D object. http://www.live2d.com/en",
+    "version": "",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_live2d"
+  },
+  {
+    "name": "Logical mask",
+    "description": "A logical area to test which tiles had been entered coverage, or had been exited coverage.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_logicmask"
+  },
+  {
+    "name": "Look up",
+    "description": "Check conditions to find passed tests listed in a csv table.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_lookup"
+  },
+  {
+    "name": "Loop iterator",
+    "description": "An iterator to return loop index",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_loopiterator"
+  },
+  {
+    "name": "Lua VM",
+    "description": "Run lua script. The lua vm was referenced from http://kripken.github.io/lua.vm.js/lua.vm.js.html.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_luavm"
+  },
+  {
+    "name": "Lunar",
+    "description": "Transfer date from solar to lunar (solar 1900~ 2049)",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_lunar"
+  },
+  {
+    "name": "Lz-string",
+    "description": "Compress string using LZ-based compression algorithm. Reference - https://github.com/pieroxy/lz-string",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_lzstring"
+  },
+  {
+    "name": "Matcher",
+    "description": "Get tiles with matched patterns.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_matcher"
+  },
+  {
+    "name": "Maze gen",
+    "description": "Generate random maze asynchronously. Reference: http://ondras.github.io/rot.js/hp/",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_maze_gen"
+  },
+  {
+    "name": "Mini board",
+    "description": "A board-container to group chess and move them together.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_miniboard"
+  },
+  {
+    "name": "Moment",
+    "description": "Parse, validate, manipulate, and display dates. http://momentjs.com/",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_momentjs"
+  },
+  {
+    "name": "Time zone",
+    "description": "Parse and display dates in any timezone. http://momentjs.com/timezone/",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_momenttimezonejs"
+  },
+  {
+    "name": "MP Sync function",
+    "description": "",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_MPsyncfunction"
+  },
+  {
+    "name": "MP wrap",
+    "description": "A hub of official multi-player plugin",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_MPwrap"
+  },
+  {
+    "name": "Mustache",
+    "description": "Logic-less templates to render text content. Reference - https://github.com/janl/mustache.js",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_mustache"
+  },
+  {
+    "name": "Nedb",
+    "description": "Asynchronous database. Reference from https://github.com/louischatriot/nedb",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_nedb"
+  },
+  {
+    "name": "Authentication",
+    "description": "Authentication which is provided by Newgrounds.io.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_ngio_authentication"
+  },
+  {
+    "name": "Event",
+    "description": "Handles logging of custom events.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_ngio_event"
+  },
+  {
+    "name": "Gateway",
+    "description": "Provides information about the gateway server.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_ngio_gateway"
+  },
+  {
+    "name": "Loader",
+    "description": "Handles loading various URLs and tracking referral stats.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_ngio_loader"
+  },
+  {
+    "name": "Medal",
+    "description": "Handles loading and unlocking of medals.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_ngio_medal"
+  },
+  {
+    "name": "Scoreboard",
+    "description": "Handles loading and posting of high scores and scoreboards.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_ngio_scoreboard"
+  },
+  {
+    "name": "Nickname",
+    "description": "Create object by nickname.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_nickname"
+  },
+  {
+    "name": "Noise",
+    "description": "Provide 2d/3d perlin noise and simplex noise . Reference: https://github.com/josephg/noisejs/blob/master/perlin.js",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_noisejsMod"
+  },
+  {
+    "name": "NW.js extend",
+    "description": "Extend function of nw.js",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_nwjs_ext"
+  },
+  {
+    "name": "Authentication",
+    "description": "Authentication which is provided by parse.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_parse_authentication"
+  },
+  {
+    "name": "Current timestamp",
+    "description": "Get current time from parse server.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_parse_curTime"
+  },
+  {
+    "name": "Date count",
+    "description": "Get date count of each monoth.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_parse_dateCount"
+  },
+  {
+    "name": "Date in a row",
+    "description": "Get continuous date count.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_parse_dateInARow"
+  },
+  {
+    "name": "File Upload",
+    "description": "Upload image to parse server, then get public URL.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_parse_FileUpload"
+  },
+  {
+    "name": "Parse initialize",
+    "description": "Set api key, javascript key and server URL of parse service.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_parse_initialize"
+  },
+  {
+    "name": "Item table",
+    "description": "Items table indexed by (itemID, key), supports writing an item or reading items back.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_parse_itemtable"
+  },
+  {
+    "name": "Leader board",
+    "description": "Leader board built on parse.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_parse_leaderboard"
+  },
+  {
+    "name": "Message",
+    "description": "Send/receive messages.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_parse_message"
+  },
+  {
+    "name": "Quick Login",
+    "description": "Try to login parse server. Creates account if it had not existed.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_parse_QuickLogin"
+  },
+  {
+    "name": "Save slot",
+    "description": "Save slot on parse.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_parse_savedata"
+  },
+  {
+    "name": "String",
+    "description": "Save string with any kind of size. This plugin will divide string into many rows for saving.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_parse_string"
+  },
+  {
+    "name": "Tags",
+    "description": "Paste tags on objects.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_parse_tag"
+  },
+  {
+    "name": "Timer",
+    "description": "Get elapsed interval from parse.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_parse_timer"
+  },
+  {
+    "name": "Authentication by token",
+    "description": "Authentication by tokens in cloud code.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_parse_tokenAuth"
+  },
+  {
+    "name": "Gashapon",
+    "description": "Gashapon in shuffle or random mode.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_patterngen"
+  },
+  {
+    "name": "Pause",
+    "description": "Pause timescale",
+    "version": "1.0",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_pause"
+  },
+  {
+    "name": "Prompt wrap",
+    "description": "Prompt wrap for web and cocoonJS",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_prompt_wrap"
+  },
+  {
+    "name": "Toggle switch",
+    "description": "A switch for toggling between on and off.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_ptoggleswitch"
+  },
+  {
+    "name": "Random gen",
+    "description": "Generate random number with a seed.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_randomgen"
+  },
+  {
+    "name": "Round FSM",
+    "description": "A finite state machine to descript a round",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_roundfsm"
+  },
+  {
+    "name": "Save-data index ",
+    "description": "A wrap of save/load game.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_savedata_index"
+  },
+  {
+    "name": "SaveLoad",
+    "description": "Get status string, or set status by string",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_saveloadstatus"
+  },
+  {
+    "name": "Scenario",
+    "description": "Executing function from a csv table while time-out",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_scenario"
+  },
+  {
+    "name": "ScenarioJ Editor",
+    "description": "Create Scenario-Json commands.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_scenarioJEditor"
+  },
+  {
+    "name": "ScenarioJ Engine",
+    "description": "Execute Scenario-Json commands.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_scenarioJEngine"
+  },
+  {
+    "name": "Sequence matcher",
+    "description": "To find sequence pattern.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_sequence_matcher"
+  },
+  {
+    "name": "Simulate key event",
+    "description": "Fire keyboard or touch events.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_simulate_keyevent"
+  },
+  {
+    "name": "SLG movement",
+    "description": "Movement on the chess board of strategy game.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_slg_movement"
+  },
+  {
+    "name": "Sprite to ArrowKey",
+    "description": "",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_spriteArrowKey"
+  },
+  {
+    "name": "Sprite Bank",
+    "description": "(Deprecated) Save/Load sprites.",
+    "version": "0.8",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_spritebank"
+  },
+  {
+    "name": "Stopwatch",
+    "description": "Accumulate escaped time.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_stopwatch"
+  },
+  {
+    "name": "SysExt",
+    "description": "System extension",
+    "version": "0.11",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_systemext"
+  },
+  {
+    "name": "Taffydb",
+    "description": "Database. Reference from http://www.taffydb.com/",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_taffydb"
+  },
+  {
+    "name": "Tag Text",
+    "description": "Displays text with multi-color, font face, or font size with tags. http://www.canvastext.com/",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_TagText"
+  },
+  {
+    "name": "TARP",
+    "description": "Time-Action Recorder and Player",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_TARP"
+  },
+  {
+    "name": "Tesseract",
+    "description": "Pure Javascript OCR for 62 Languages. Reference: https://github.com/naptha/tesseract.js",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_tesseractjs"
+  },
+  {
+    "name": "Tilt to angle",
+    "description": "Get angle from tilt's beta and gamma input.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_tilt2angle"
+  },
+  {
+    "name": "Tilt to arrow key",
+    "description": "Get arrow key event from tilt's beta and gamma input.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_tilt2ArrowKey"
+  },
+  {
+    "name": "Tilt alpha to left/right key",
+    "description": "Get left or right key event from tilt's alpha input.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_tiltAlpha2LeftRightKey"
+  },
+  {
+    "name": "TimeLine",
+    "description": "TimeLine & Timer, to execute function while time-out.",
+    "version": "1.0",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_timeline"
+  },
+  {
+    "name": "Time away",
+    "description": "Get elapsed interval of turned off game from webstroage.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_time_away"
+  },
+  {
+    "name": "Time away L",
+    "description": "Get elapsed interval of turned off game from local storage.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_time_awayL"
+  },
+  {
+    "name": "TMX Importer v2",
+    "description": "Create sprites according to tmx exported file.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_tmx_importer_v2"
+  },
+  {
+    "name": "TMX-JSON Parser",
+    "description": "A TMX-JSON parser.",
+    "version": "0.11",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_tmx_JSON_parser"
+  },
+  {
+    "name": "TMX-XML Parser",
+    "description": "A TMX-XML parser.",
+    "version": "0.11",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_tmx_XML_parser"
+  },
+  {
+    "name": "Token",
+    "description": "Round-robin player index, used in turn based game.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_token"
+  },
+  {
+    "name": "ToneJS api",
+    "description": "Tone objects in a dictionary. https://github.com/Tonejs/Tone.js",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_tonejs_api"
+  },
+  {
+    "name": "MidiConvert",
+    "description": "Convert MIDI into Tone.js-friendly JSON, and play it.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_tonejs_midiConvert"
+  },
+  {
+    "name": "Object shell",
+    "description": "Shell of tone object.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_tonejs_objectShell"
+  },
+  {
+    "name": "Part",
+    "description": "An alternate notation of a part.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_tonejs_part"
+  },
+  {
+    "name": "Sequence",
+    "description": "An alternate notation of a part.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_tonejs_sequence"
+  },
+  {
+    "name": "Touch wrap",
+    "description": "A wrap from official Touch plugin to export touch/mouse input to other plugins.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_touchwrap"
+  },
+  {
+    "name": "Tween tasks",
+    "description": "Run tasks of tween functions",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_tweenTasks"
+  },
+  {
+    "name": "UID to Properties",
+    "description": "Get/set properties (x,y,angle,opacity,private variable) by UID without picking first.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_uid2prop"
+  },
+  {
+    "name": "Undo & Redo",
+    "description": "A data structure to support undo&redo steps/states.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_undoredo"
+  },
+  {
+    "name": "Verbal Expressions",
+    "description": "Create Regular expression. https://github.com/VerbalExpressions/JSVerbalExpressions/blob/master/VerbalExpressions.js",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_verbalExpressions"
+  },
+  {
+    "name": "Wait Event",
+    "description": "Wait events finished.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_waitevent"
+  },
+  {
+    "name": "Waker",
+    "description": "Running ticks during suspended status.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_waker"
+  },
+  {
+    "name": "Web page reader",
+    "description": "Read web page by cross domain request.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_webpage_reader"
+  },
+  {
+    "name": "Webstorage Ext",
+    "description": "Provide some methods to access webstorage.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_webstorage_ext"
+  },
+  {
+    "name": "Weixin share",
+    "description": "Post messages on Weixin.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_weixin_share"
+  },
+  {
+    "name": "Wilddog API",
+    "description": "API of real time database-as-a-service. https://www.wilddog.com/ It is compatiable with firebase service.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_wilddog_api"
+  },
+  {
+    "name": "Orientation",
+    "description": "Get orientation of window. (landspcape or portrait)",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_window_orientation"
+  },
+  {
+    "name": "Work Sheet",
+    "description": "Executing instructions from a string while time-out",
+    "version": "1.0",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_worksheet"
+  },
+  {
+    "name": "XML Writer",
+    "description": "Build XML structure. Reference: http://flesler.blogspot.com/2008/03/xmlwriter-for-javascript.html",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_XMLWriter"
+  },
+  {
+    "name": "Yahoo finance",
+    "description": "Read stocks info from yahoo.finance.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_YahooFinance"
+  },
+  {
+    "name": "Youtube player",
+    "description": "Play youtube video at iframe.",
+    "version": "0.1",
+    "author": "Rex.Rainbow",
+    "path": "plugins/rex_youtube_player"
+  },
+  {
+    "name": "Z Sorter",
+    "description": "Sorts Objects in Layer By Y",
+    "version": "1.0",
+    "author": "Juan Pablo Tarquino",
+    "path": "plugins/rex_zSorter"
+  },
+  {
+    "name": "Astar",
+    "description": "This plugin is connected with the behaviour Pathfinder to allow fast pathfinding.",
+    "version": "0.24",
+    "author": "00Rez / Andrew Hall",
+    "path": "plugins/rez_astar"
+  },
+  {
+    "name": "Scml",
+    "description": "Load and playback SCML files from BrashMonkey's Spriter animation toolkit.",
+    "version": "1.0",
+    "author": "BrashMonkey",
+    "path": "plugins/scml"
+  },
+  {
+    "name": "SecureData",
+    "description": "Store secure data under named keys, e.g. set \\",
+    "version": "1.0",
+    "author": "DeX",
+    "path": "plugins/SecureData"
+  },
+  {
+    "name": "Shadow Light",
+    "description": "Cast shadows from objects with the Shadow Caster behavior.",
+    "version": "1.0",
+    "author": "Scirra",
+    "path": "plugins/shadowlight"
+  },
+  {
+    "name": "Notifications",
+    "description": "Add notification message.",
+    "version": "1.3",
+    "author": "SirG",
+    "path": "plugins/sirg_notifications"
+  },
+  {
+    "name": "Particle Generator",
+    "description": "Load settings from Particle Generator.",
+    "version": "1.0",
+    "author": "SirG",
+    "path": "plugins/sirg_particlegen_import"
+  },
+  {
+    "name": "Randomizator",
+    "description": "Randomizator plugin provides random data",
+    "version": "1.0",
+    "author": "Sir_G",
+    "path": "plugins/sirg_randomizator"
+  },
+  {
+    "name": "RPG Dialogue",
+    "description": "Create dialogue in RPG style.",
+    "version": "1.0",
+    "author": "Sir_G",
+    "path": "plugins/sirg_rpgdialog"
+  },
+  {
+    "name": "SpriteFont+",
+    "description": "Extends the native Sprite Font to provide easier configuration and editing",
+    "version": "1.0",
+    "author": "Chris Kent",
+    "path": "plugins/spritefont+"
+  },
+  {
+    "name": "Sprite font",
+    "description": "Displays some text on the screen using a sprite sheet.",
+    "version": "1.0",
+    "author": "Scirra",
+    "path": "plugins/spritefont2"
+  },
+  {
+    "name": "PKP_SweetAlert",
+    "description": "<appears at the bottom of the insert object dialog>",
+    "version": "1.0",
+    "author": "<your name/organisation>",
+    "path": "plugins/Sweet Alert"
+  },
+  {
+    "name": "Sweet Alert",
+    "description": "A beautiful and customizable replacement for javascript's popup boxes.",
+    "version": "0.20",
+    "author": "PlayLive and Andrews Vinícius",
+    "path": "plugins/Sweet Alert II"
+  },
+  {
+    "name": "Touch2",
+    "description": "Retrieve input from touchscreen devices, and access device orientation and motion.",
+    "version": "1.0",
+    "author": "Scirra",
+    "path": "plugins/touch2"
+  },
+  {
+    "name": "Ultimate Ads",
+    "description": "Complex AdMob ads plugin for Cocoon, Phonegap, Cordova CLI.",
+    "version": "2.0",
+    "author": "Toby R",
+    "path": "plugins/UltimateAds"
+  },
+  {
+    "name": "Android Tools",
+    "description": "Usefull Android Tools Plugin",
+    "version": "1.6.0",
+    "author": "Vinoos",
+    "path": "plugins/vinoos-android-tools"
+  },
+  {
+    "name": "vkontakte",
+    "description": "VK interaction. Теперь банановый!",
+    "version": "1.2",
+    "author": "AquaBarbus",
+    "path": "plugins/vkontakte"
+  },
+  {
+    "name": "ZSorter",
+    "description": "Sorts All Objects in Layer By Y",
+    "version": "",
+    "author": "Juan Pablo Tarquino",
+    "path": "plugins/ZSorter"
+  }
+]

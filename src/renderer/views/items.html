@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Construct Addon Manager - Items</title>
+  <title>Construct Addon Manager - Plugins</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -23,105 +23,118 @@
 
   <!-- Main Container -->
   <div class="main-container">
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <div class="sidebar-header">
-        <h3>Categories</h3>
-      </div>
-      <div class="sidebar-content">
-        <ul class="sidebar-menu">
-          <li class="sidebar-item active" data-filter="all">
-            <div class="sidebar-icon">🧩</div>
-            <div class="sidebar-text">All Items</div>
-          </li>
-          <li class="sidebar-item" data-filter="plugin">
-            <div class="sidebar-icon">🔌</div>
-            <div class="sidebar-text">Plugins</div>
-          </li>
-          <li class="sidebar-item" data-filter="behavior">
-            <div class="sidebar-icon">🔄</div>
-            <div class="sidebar-text">Behaviors</div>
-          </li>
-          <li class="sidebar-item" data-filter="effect">
-            <div class="sidebar-icon">✨</div>
-            <div class="sidebar-text">Effects</div>
-          </li>
-        </ul>
-      </div>
-      <div class="sidebar-footer">
-        <button id="settings-btn" class="sidebar-button">
-          <div class="sidebar-icon">⚙️</div>
-          <div class="sidebar-text">Settings</div>
-        </button>
-      </div>
-    </div>
-
     <!-- Content Area -->
     <div class="content-area">
+      <!-- Tab Navigation -->
+      <div class="tabs-container">
+        <div class="tabs-nav">
+          <div class="tab active" data-tab="plugins">
+            <div class="tab-icon">🔌</div>
+            <div class="tab-text">Plugins</div>
+          </div>
+          <div class="tab disabled" data-tab="behaviors">
+            <div class="tab-icon">🔄</div>
+            <div class="tab-text">Behaviors</div>
+            <div class="coming-soon-badge">Coming Soon</div>
+          </div>
+          <div class="tab disabled" data-tab="effects">
+            <div class="tab-icon">✨</div>
+            <div class="tab-text">Effects</div>
+            <div class="coming-soon-badge">Coming Soon</div>
+          </div>
+          <div class="tabs-actions">
+            <button id="settings-btn" class="btn secondary-btn">
+              <div class="btn-icon">⚙️</div>
+              <div class="btn-text">Settings</div>
+            </button>
+            <button id="back-btn" class="btn secondary-btn">
+              <div class="btn-icon">←</div>
+              <div class="btn-text">Back</div>
+            </button>
+          </div>
+        </div>
+      </div>
+      
       <!-- Search and Filter Bar -->
       <div class="search-bar">
         <div class="search-container">
           <div class="search-icon">🔍</div>
-          <input type="text" id="search-input" placeholder="Search items...">
+          <input type="text" id="search-input" placeholder="Search plugins...">
           <button id="clear-search" class="clear-search">✕</button>
         </div>
         <div class="filter-container">
           <select id="sort-select" class="filter-select">
             <option value="name-asc">Name (A-Z)</option>
             <option value="name-desc">Name (Z-A)</option>
-            <option value="type">Type</option>
-            <option value="date-added">Date Added</option>
+            <option value="author">Author</option>
+            <option value="version">Version</option>
           </select>
         </div>
-        <!-- Add Resource Button -->
-        <button id="add-resource-btn-open" class="btn primary-btn">Add Resource</button>
       </div>
 
       <!-- Items Grid -->
-      <div class="items-grid">
-        <!-- Items will be dynamically generated here -->
+      <div class="items-grid" id="plugins-grid">
+        <!-- Plugins will be dynamically generated here -->
       </div>
 
       <!-- No Results Message -->
       <div id="no-results" class="no-results hidden">
         <div class="no-results-icon">😕</div>
-        <h3>No items found</h3>
+        <h3>No plugins found</h3>
         <p>Try adjusting your search or filter criteria</p>
       </div>
     </div>
   </div>
 
-  <!-- Item Details Modal -->
-  <div id="item-details-modal" class="modal">
+  <!-- Plugin Details Modal -->
+  <div id="plugin-details-modal" class="modal">
     <div class="modal-content">
       <div class="modal-header">
-        <h2 id="modal-item-name">Item Name</h2>
+        <h2 id="modal-plugin-name">Plugin Name</h2>
         <div class="modal-close" id="close-modal">✕</div>
       </div>
       <div class="modal-body">
-        <div class="modal-item-icon" id="modal-item-icon">🔌</div>
-        <div class="modal-item-details">
-          <div class="detail-row">
-            <div class="detail-label">Type:</div>
-            <div class="detail-value" id="modal-item-type">Plugin</div>
-          </div>
+        <div class="modal-plugin-icon" id="modal-plugin-icon">🔌</div>
+        <div class="modal-plugin-details">
           <div class="detail-row">
             <div class="detail-label">Version:</div>
-            <div class="detail-value" id="modal-item-version">1.0.0</div>
+            <div class="detail-value" id="modal-plugin-version">1.0.0</div>
           </div>
           <div class="detail-row">
             <div class="detail-label">Author:</div>
-            <div class="detail-value" id="modal-item-author">Author Name</div>
+            <div class="detail-value" id="modal-plugin-author">Author Name</div>
           </div>
           <div class="detail-row">
             <div class="detail-label">Description:</div>
-            <div class="detail-value" id="modal-item-description">Description text will go here...</div>
+            <div class="detail-value" id="modal-plugin-description">Description text will go here...</div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-label">Status:</div>
+            <div class="detail-value" id="plugin-install-status">Not installed</div>
           </div>
         </div>
       </div>
       <div class="modal-footer">
-        <button class="btn secondary-btn" id="disable-item-btn">Disable</button>
-        <button class="btn primary-btn" id="manage-item-btn">Manage</button>
+        <button class="btn primary-btn" id="install-plugin-btn">Install Plugin</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Plugin Installed Success Modal -->
+  <div id="plugin-installed-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Plugin Installed</h2>
+        <div class="modal-close" id="close-success-modal">✕</div>
+      </div>
+      <div class="modal-body">
+        <div class="success-icon">✅</div>
+        <div class="success-message">
+          The plugin <span id="success-plugin-name" class="plugin-name">-</span> has been successfully installed.
+        </div>
+        <div class="modal-buttons">
+          <button id="ok-success-btn" class="btn primary-btn">OK</button>
+        </div>
       </div>
     </div>
   </div>
@@ -134,29 +147,15 @@
         <div class="modal-close" id="close-settings-modal">✕</div>
       </div>
       <div class="modal-body settings-body">
-        <div class="settings-section">
-          <div class="setting-item">
-            <div class="setting-label">Download Resources Locally</div>
-            <label class="switch">
-              <input type="checkbox" id="download-resources-toggle">
-              <span class="slider round"></span>
-            </label>
-          </div>
-          <div class="setting-item">
-            <div class="setting-label">Auto-Update</div>
-            <label class="switch">
-              <input type="checkbox" id="auto-update-toggle">
-              <span class="slider round"></span>
-            </label>
-          </div>
+        <div class="setting-item">
+          <div class="setting-label">Construct 2 Path:</div>
+          <div class="setting-value" id="construct-path-display">Not set</div>
         </div>
         
         <div class="about-section">
           <h3>About</h3>
           <p>Construct Addon Manager v2.0.0</p>
-          <p>Created by MethaTrader</p>
           <p>Thank you for using this application!</p>
-          <button class="btn primary-btn" id="donate-btn">Support Development</button>
         </div>
         
         <div class="buttons-section">
@@ -166,141 +165,6 @@
     </div>
   </div>
 
-  <!-- Add Resource Modal -->
-  <div id="add-resource-modal" class="modal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2>Add Resource</h2>
-        <div class="modal-close" id="close-add-resource-modal">✕</div>
-      </div>
-      <div class="modal-body">
-        <div class="section-title">Resource Type</div>
-        <div class="resource-type-selection">
-          <div class="resource-type-option active" data-type="plugin">
-            <div class="resource-type-icon">🔌</div>
-            <div class="resource-type-label">Plugin</div>
-          </div>
-          <div class="resource-type-option" data-type="behavior">
-            <div class="resource-type-icon">🔄</div>
-            <div class="resource-type-label">Behavior</div>
-          </div>
-          <div class="resource-type-option" data-type="effect">
-            <div class="resource-type-icon">✨</div>
-            <div class="resource-type-label">Effect</div>
-          </div>
-        </div>
-
-        <div class="section-title">Resource Location</div>
-        <div class="resource-path-container">
-          <input type="text" id="resource-path-input" class="text-input" placeholder="Select resource folder..." readonly>
-          <button id="browse-resource-btn" class="btn secondary-btn">Browse</button>
-        </div>
-
-        <div id="resource-error" class="resource-error hidden">
-          <div class="error-icon">⚠️</div>
-          <div id="error-message" class="error-message">Error message here</div>
-        </div>
-
-        <div id="resource-preview" class="resource-preview hidden">
-          <div class="section-title">Resource Details</div>
-          <div class="preview-editable">
-            <div class="preview-two-columns">
-              <div class="preview-field">
-                <label for="preview-name-input">Name</label>
-                <input type="text" id="preview-name-input" placeholder="Resource name">
-              </div>
-              
-              <div class="preview-field">
-                <label for="preview-id-input">ID</label>
-                <input type="text" id="preview-id-input" placeholder="Unique identifier">
-              </div>
-            </div>
-            
-            <div class="preview-two-columns">
-              <div class="preview-field">
-                <label for="preview-version-input">Version</label>
-                <input type="text" id="preview-version-input" placeholder="e.g. 1.0.0">
-              </div>
-              
-              <div class="preview-field">
-                <label for="preview-author-input">Author</label>
-                <input type="text" id="preview-author-input" placeholder="Author name">
-              </div>
-            </div>
-            
-            <div class="preview-field">
-              <label for="preview-category-input">Category</label>
-              <input type="text" id="preview-category-input" placeholder="Resource category">
-            </div>
-            
-            <div class="preview-field">
-              <label>Icon</label>
-              <div class="icon-selection">
-                <div class="icon-option selected" data-icon="🔌">🔌</div>
-                <div class="icon-option" data-icon="🔄">🔄</div>
-                <div class="icon-option" data-icon="✨">✨</div>
-                <div class="icon-option" data-icon="📊">📊</div>
-                <div class="icon-option" data-icon="🎮">🎮</div>
-                <div class="icon-option" data-icon="🎵">🎵</div>
-              </div>
-            </div>
-            
-            <div class="preview-field full-width">
-              <label for="preview-description-input">Description</label>
-              <textarea id="preview-description-input" placeholder="Describe the resource functionality..."></textarea>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal-buttons">
-          <button id="cancel-add-resource-btn" class="btn secondary-btn">Cancel</button>
-          <button id="add-resource-btn" class="btn primary-btn" disabled>Add Resource</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Resource Added Success Modal -->
-  <div id="resource-added-modal" class="modal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2>Resource Added</h2>
-        <div class="modal-close" id="close-success-modal">✕</div>
-      </div>
-      <div class="modal-body">
-        <div class="success-icon">✅</div>
-        <div class="success-message">
-          The resource <span id="success-resource-name" class="resource-name">-</span> has been successfully added to your library.
-        </div>
-        <div class="modal-buttons">
-          <button id="ok-success-btn" class="btn primary-btn">OK</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Resource Conflict Modal -->
-  <div id="resource-conflict-modal" class="modal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2>Resource Conflict</h2>
-        <div class="modal-close" id="close-conflict-modal">✕</div>
-      </div>
-      <div class="modal-body">
-        <div class="warning-icon">⚠️</div>
-        <div class="conflict-message">
-          A resource named <span id="conflict-resource-name" class="resource-name">-</span> already exists in your library.
-        </div>
-        <div class="conflict-question">Do you want to overwrite it?</div>
-        <div class="modal-buttons">
-          <button id="cancel-overwrite-btn" class="btn secondary-btn">Cancel</button>
-          <button id="confirm-overwrite-btn" class="btn primary-btn">Overwrite</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script src="../scripts/ResourceManager.js"></script>
-  <script src="../scripts/items.js"></script>
+  <script src="../scripts/plugins.js"></script>
 </body>
 </html>

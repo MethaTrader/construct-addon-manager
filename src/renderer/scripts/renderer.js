@@ -17,25 +17,25 @@ const executableCheck = document.getElementById('executable-check');
 
 // Window control buttons
 document.getElementById('minimize-btn').addEventListener('click', () => {
-  window.api.minimizeWindow();
+  window.electronAPI.minimizeWindow();
 });
 
 document.getElementById('maximize-btn').addEventListener('click', () => {
-  window.api.maximizeWindow();
+  window.electronAPI.maximizeWindow();
 });
 
 document.getElementById('close-btn').addEventListener('click', () => {
-  window.api.closeWindow();
+  window.electronAPI.closeWindow();
 });
 
 // Check if app is running as admin
-window.api.onNotAdmin(() => {
+window.electronAPI.onNotAdmin(() => {
   adminWarning.classList.add('active');
 });
 
 // Admin warning buttons
 document.getElementById('restart-admin-btn').addEventListener('click', () => {
-  window.api.restartAsAdmin();
+  window.electronAPI.restartAsAdmin();
 });
 
 document.getElementById('continue-btn').addEventListener('click', () => {
@@ -57,7 +57,7 @@ construct3Btn.addEventListener('click', () => {
 
 // Path selection screen
 document.getElementById('browse-btn').addEventListener('click', async () => {
-  const paths = await window.api.selectFolder();
+  const paths = await window.electronAPI.selectFolder();
   if (paths && paths.length > 0) {
     pathInput.value = paths[0];
     updateContinueButton();
@@ -143,7 +143,7 @@ async function validateConstructPath(constructPath) {
     await delay(600);
     
     // Start validation process through the main process
-    const validationResults = await window.api.validateConstructPath(constructPath);
+    const validationResults = await window.electronAPI.validateConstructPath(constructPath);
     
     // Update behaviors check result
     updateItemStatus(behaviorsCheck, validationResults.behaviors, 
@@ -179,8 +179,16 @@ async function validateConstructPath(constructPath) {
     // Final validation result
     await delay(1000);
     if (validationResults.isValid) {
+      // Save the construct path to localStorage for use in the plugins page
+      localStorage.setItem('constructPath', constructPath);
+      
+      // Also send the path to the main process
+      if (window.electronAPI && window.electronAPI.setConstructPath) {
+        window.electronAPI.setConstructPath(constructPath);
+      }
+      
       // Navigate to the items page
-      window.api.navigateToItems();
+      window.electronAPI.navigateToItems();
     } else {
       // Show validation error modal
       let errorMessage = 'The selected folder does not appear to be a valid Construct 2 installation.';

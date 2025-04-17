@@ -1,19 +1,51 @@
 {
     "name": "construct-addon-manager",
     "version": "1.0.0",
-    "description": "Addon Manager for Construct 2 and 3",
+    "description": "Addon Manager for Construct 2",
     "main": "src/main/main.js",
     "scripts": {
         "start": "electron .",
-        "dev": "cross-env NODE_ENV=development electron . --inspect"
+        "dev": "cross-env NODE_ENV=development electron . --inspect",
+        "package": "electron-builder --dir",
+        "dist": "electron-builder",
+        "dist-unsigned": "electron-builder --win --x64 --publish never"
     },
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "electron": "^29.1.0",
         "is-admin": "^3.0.0"
     },
     "devDependencies": {
-        "cross-env": "^7.0.3"
+        "electron": "^29.1.0",
+        "cross-env": "^7.0.3",
+        "electron-builder": "^24.6.4"
+    },
+    "build": {
+        "appId": "com.construct.addonmanager",
+        "productName": "Construct 2 Addon Manager",
+        "directories": {
+            "output": "dist"
+        },
+        "files": [
+            "src/**/*",
+            "plugins/**/*",
+            "plugins.json",
+            "package.json"
+        ],
+        "extraResources": [
+            "plugins/**/*",
+            "plugins.json"
+        ],
+        "win": {
+            "target": "nsis",
+            "icon": "src/assets/icon.ico"
+        },
+        "nsis": {
+            "oneClick": false,
+            "allowToChangeInstallationDirectory": true,
+            "createDesktopShortcut": true,
+            "createStartMenuShortcut": true
+        },
+        "forceCodeSigning": false
     }
 }
